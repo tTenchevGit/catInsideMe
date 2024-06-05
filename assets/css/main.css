@@ -1,0 +1,193 @@
+/* Main Content */
+
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    height: 100vh;
+}
+
+#section1 {
+    /* background: linear-gradient(135deg, #74ABE2, #5563C1); */
+    background-image: url("/assets/img/photo_2024-06-04_08-48-25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    /* backdrop-filter: blur(10px); */
+    /* background: rgba(255, 255, 255, 0); */
+}
+
+.text {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding-top: 150px;
+    /* backdrop-filter: blur(10px); */
+}
+
+.photo {
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    /* backdrop-filter: blur(10px); */
+    
+}
+
+/* .neon-pink::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+   
+    border-radius: 10px;
+    
+} */
+
+/* .icons{
+    
+    
+   
+} */
+#cat1 {
+
+   
+}
+
+#cat2 {
+ 
+    transform: rotate(15deg); 
+}
+
+
+#section2{
+    background-image: url("/assets/img/brain-xray.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  display: flex;
+  flex-direction: column;
+    background-position: center center;
+
+}
+.textsection2{
+    display: none;
+}
+#video1{
+    opacity: 0.8;
+    
+}
+
+.SECTION2ROULET{
+    opacity: 0.8;
+  
+}
+
+.SECTION2ROULET img{
+   
+    border-radius: 28%;
+  }
+/* Footer */
+
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: -webkit-linear-gradient(left, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(246, 0, 0, 0.6));
+    color: black;
+    
+  }
+
+@media (max-width: 768px) {
+
+    .textsection2{
+        display: flex;
+        background: -webkit-linear-gradient(left, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        
+        font-size:28px;
+    }
+
+    #video1{
+        opacity: 0.8;
+        /* background-position: center center; */
+
+    width: 100px;
+    height:150px;
+        
+    }
+
+    .SECTION2ROULET{
+        display: FLEX;
+        flex-direction: column;
+        opacity: 0.8;
+    }
+
+    .content {background: -webkit-linear-gradient(left, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+        button {
+            background: -webkit-linear-gradient(left, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(246, 0, 0, 0.6));
+    
+            color: #000000 !important;
+            -webkit-text-fill-color:#000000 !important;
+        }
+          
+    }
+
+
+
+footer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add some padding for spacing */
+
+}
+
+.nav-icon img {
+    margin: 0 20px;
+    width: 60px; /* Set a fixed size for your images */
+    height: 60px; /* Set a fixed size for your images */
+    border-radius: 50%; /* Make the images circular */
+    box-shadow: 0 0 15px rgba(255, 92, 92, 0.8); /* Add a green box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-icon img:hover {
+    transform: scale(1.1); /* Scale up images on hover */
+    box-shadow: 0 0 35px rgba(212, 12, 59, 0.963); /* Make the box shadow more prominent on hover */
+}
+
+
+
+
+

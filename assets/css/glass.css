@@ -1,0 +1,29 @@
+/* body {
+    background: linear-gradient(135deg, #74ABE2, #5563C1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-card h2 {
+    color: #fff;
+  }
+  
+  .glass-card p {
+    color: #eee;
+  }
+   */

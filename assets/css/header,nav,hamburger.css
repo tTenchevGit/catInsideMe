@@ -1,0 +1,106 @@
+/* header,nav,hamburger.css */
+
+
+header {
+    backdrop-filter: blur(30px); 
+    background: #3333330c;
+    color: white;
+    padding: 1rem 0;
+    backdrop-filter: blur(30px); 
+    box-shadow: 0 25px 45px rgba(212, 12, 59, 0.963);
+    border: 1px solid rgba(53, 52, 52, 0.3);
+
+}
+
+/* backdrop-filter: blur(30px); 
+background: rgba(255, 255, 255, 0); */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(right, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: rgba(212, 12, 59, 0.963);
+    
+    
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(right, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        left: -40px;
+        background: #040404cf;
+        backdrop-filter: blur(100px); 
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding-top: 10px;
+        color: pink;;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .nav-links a.linka {
+        color: pink; /* Set the text color to pink */
+        
+    }
+
+    .section {
+        /* display: flex; */
+        flex-direction: column;
+        padding: 20px;
+    }
+  
+}

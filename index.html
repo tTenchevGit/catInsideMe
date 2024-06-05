@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamblerCatInsideMe</title>
+    <link rel="stylesheet" href="assets/css/glass.css">
+    <link rel="stylesheet" href="assets/css/body,html.css">
+    <link rel="stylesheet" href="assets/css/header,nav,hamburger.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
+    <script src="/assets/js/rouletgame.js"></script>
+</head>
+
+    
+   
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">GamblerCatInsideMe</div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="linka" href="#section1">Home</a></li>
+                <li><a class="linka" href="#section2">Gambler</a></li>
+                <li><a class="linka" id="showDisclaimer" style="cursor: pointer;">Discalmer</a></li>
+                <li><a class="linka"  href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1" class="section">
+            <div class="content text">
+                 <h1>GamblerCatInsideMe</h1>
+                 <button id="startGame" >Play Now</button> 
+                
+
+<a href="https://www.pump.fun/board" target="_blank" rel="noopener noreferrer">
+    <button>Gamble Now</button>
+</a>
+                </div>
+            <div class="content photo neon-pink"><img id="cat1" class="icons" height="325px" src="/assets/img/sticker.webp" alt=""></div>
+            <div class="content photo neon-pink"><img id="cat2" class="icons" height="325px" src="/assets/img/sticker2.png" alt=""></div>
+        </section>
+       
+        <div id="rouletteModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- <h2>Roulette Game</h2> -->
+                <div class="roulette-pointer"></div>
+                <div class="roulette-wheel" id="wheel">
+                    <!-- Numbers will be inserted by JavaScript -->
+                </div>
+                <button id="spinButton">Spin</button>
+                <h2 id="resultText"></h> 
+            </div>
+        </div>
+
+        <div id="disclaimerModal" class="modal1">
+            <div class="modal-content1">
+                <span class="close-disclaimer">&times;</span>
+                <h2>Disclaimer</h2>
+                <div class="disclaimer-text">
+                    <p>Bro what?? See this guy? lmao!! He's reading the disclaimer!! HAAHAH!</p>
+                    <p>Sigh.. Anyway, before you proceed, please read the following disclaimer:</p>
+                    <h3>Disclaimer:</h3>
+                    <p>The information provided on this website is for educational and entertainment purposes only. Investing in cryptocurrencies, including meme tokens, carries inherent risks. Please exercise caution and conduct thorough research before making any financial decisions.</p>
+                    <ul>
+                        <li><strong>Volatility Warning:</strong> Meme tokens are highly volatile. Only invest what you can afford to lose.</li>
+                        <li><strong>Community-Driven:</strong> Meme tokens rely on community sentiment and social media trends.</li>
+                        <li><strong>Lack of Regulation:</strong> Meme tokens operate in an unregulated space.</li>
+                    </ul>
+                    <p>Remember that this disclaimer does not constitute financial advice. Consult a qualified financial advisor before making any investment decisions.</p>
+                </div>
+                <button class="close-disclaimer">BRING ME BACK!!! I AM A DEGEN!!!</button>
+            </div>
+        </div>
+
+        <section id="section2" class="section">
+            <p class="textsection2">Lose your Money Degen!</p>
+            <video id="video1" width="200px" height="200px" controls autoplay loop>
+                <source src="/assets/img/bitcoin cat.gif.mp4" type="video/mp4" />
+            </video>
+            
+            
+            <div class="SECTION2ROULET" >
+                <img src="/assets/img/200w.gif" alt="">
+                <!-- <img src="/assets/img/giphy.gif" alt=""> -->
+            </div>
+
+            
+        <!-- <img height="40px" src="/assets/img/sticker2.png" alt=""> -->
+        </section>
+        <!-- <section id="section3" class="section"></section> -->
+    </main>
+    <footer id="footer">
+        <a href="https://www.pump.fun/" class="nav-icon">
+            <img src="push.png" >
+            </a>
+            <a href="https://t.me/Dev_In_Jail" class="nav-icon">
+                <img src="apps.55245.13537716651231321.3067a421-6c2f-48a9-b77c-1e38e19146e6.png" >
+                </a>
+                <a href="https://twitter.com/DevInJail" class="nav-icon">
+                    <img src="ZS9jJfar_400x400.jpg" >
+                    </a>
+    </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const disclaimerModal = document.getElementById("disclaimerModal");
+    const btnDisclaimer = document.getElementById("showDisclaimer");
+    const spanCloseDisclaimer = document.getElementsByClassName("close-disclaimer");
+
+    btnDisclaimer.onclick = function() {
+        disclaimerModal.style.display = "flex";
+    }
+
+    for (let i = 0; i < spanCloseDisclaimer.length; i++) {
+        spanCloseDisclaimer[i].onclick = function() {
+            disclaimerModal.style.display = "none";
+        }
+    }
+
+    // window.onclick = function(event) {
+    //     if (event.target == disclaimerModal) {
+    //         disclaimerModal.style.display = "none";
+    //     }
+    // }
+});
+
+   </script>
+
+
+</body>
+</html>

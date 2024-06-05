@@ -1,0 +1,139 @@
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: -webkit-linear-gradient(left, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6));
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Increased the width */
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+   
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Modal styles */
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content1 {
+    background-color: rgba(159, 72, 94, 0.963);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Max width to keep it responsive */
+    text-align: center;
+    max-height: 80%; /* Limit the height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.close-disclaimer {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.close-disclaimer:hover,
+.close-disclaimer:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.disclaimer-text {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+/* Roulette wheel styles */
+.roulette-wheel {
+    margin: 20px auto;
+    width: 400px; /* Increased the width */
+    height: 400px; /* Increased the height */
+    border: 10px solid #333;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(circle at center, #333, #111);
+}
+
+.roulette-pointer {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid red;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 20px);
+}
+
+.roulette-number {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #000;
+}
+
+.red { background-color: red; }
+.black { background-color: black; color: white; }
+.green { background-color: green; color: white; }
+
+/* Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#resultText{
+
+}

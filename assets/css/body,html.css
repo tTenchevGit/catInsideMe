@@ -1,0 +1,8 @@
+body, html {
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
