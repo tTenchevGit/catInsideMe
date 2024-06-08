@@ -3,7 +3,7 @@
 
 header {
     backdrop-filter: blur(30px); 
-    background: #3333330c;
+    /* background: #3333330c; */
     color: white;
     padding: 1rem 0;
     backdrop-filter: blur(30px); 
@@ -58,41 +58,46 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    background: -webkit-linear-gradient(right, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   color: rgba(212, 12, 59, 0.963);
+    /* background: -webkit-linear-gradient(right, rgba(212, 12, 59, 0.963), rgba(255, 92, 92, 0.8), rgba(255, 153, 153, 0.6)); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-size: 1rem;
 }
 
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        z-index: 1111111;
     }
 
     .nav-links {
-        
+        z-index: 1111111;
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
         top: 45px;
         left: -40px;
-        background: #040404cf;
-        backdrop-filter: blur(100px); 
-        background: rgba(255, 255, 255, 0);
+        /* background: #040404cf;
+        backdrop-filter: blur(100px);  */
+        background: rgb(0, 0, 0);
     }
 
     .nav-links.show {
         display: flex;
+        z-index: 1111111111111;
     }
 
     .nav-links li {
+        z-index: 1111111;
         padding-top: 10px;
         color: pink;;
         text-align: center;
         margin: 10px 0;
     }
     .nav-links a.linka {
+        z-index: 1111111;
         color: pink; /* Set the text color to pink */
         
     }
